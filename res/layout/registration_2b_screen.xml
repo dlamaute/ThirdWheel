@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="10sp"
+	    android:layout_marginRight="10sp"
+	    android:gravity="center"
+	    android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionNext"
+        android:background="@drawable/username_1"/>
+        
+	<EditText
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="10sp"
+	    android:layout_marginRight="10sp"
+	    android:gravity="center"
+	    android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionDone"
+        android:background="@drawable/email_phone"/>
+	
+	<ImageView
+	    android:id="@+id/locpoint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30sp"
+	    android:layout_gravity="center_horizontal"
+	    android:src="@drawable/loc_point"/>
+	
+	<ImageButton
+	    android:id="@+id/addLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/add_loc_switch"/>
+
+</LinearLayout>

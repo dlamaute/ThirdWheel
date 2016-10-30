@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView
+	    android:id="@+id/like_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/wheel"
+	    android:textColor="@color/black"
+	    android:textSize="24sp"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="30sp" />
+	
+	<ImageView
+	    android:id="@+id/like_heart"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/heart_turned"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="20sp" />
+	
+	<ImageView
+	    android:id="@+id/liker"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/pic_unsel"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="10sp" />
+	
+	<TextView
+	    android:id="@+id/like_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/like"
+	    android:textColor="@color/red"
+	    android:gravity="center"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="20sp" />
+	
+	<LinearLayout
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10sp"
+    	android:layout_marginBottom="10sp"
+    	android:orientation="horizontal" >
+    	
+	    <ImageView
+	        android:id="@+id/x"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/decline"
+	        android:layout_marginLeft="10sp"
+	        android:layout_gravity="center_vertical" />
+	    
+	    <Button
+	        android:id="@+id/decline"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/decline"
+	        android:textSize="30sp"
+	        android:background="@null"
+	        android:layout_marginRight="5sp"
+	        android:layout_gravity="center_vertical" />
+	    
+	    <ImageButton
+	        android:id="@+id/say_hi"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10sp"
+	        android:background="@drawable/say_hi"
+	        android:layout_gravity="center_vertical" />
+	        
+	    
+	</LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appideaexperts.thirdwheel"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+    
+    <uses-feature android:name="android.hardware.camera"
+        		  android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash_screen_tw"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".App">
+        
+        <!-- Splash Screen -->
+        
+        <activity 
+            android:name="SplashScreen" 
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>    
+  				<category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- Home Screen -->
+        
+        <activity
+            android:name="HomeScreen"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        
+        <!-- Privacy Popup -->
+        
+        <activity
+            android:name="android.support.v4.app.FragmentActivity"
+            android:label="@string/policybtn">
+        </activity>
+        
+        <!-- Sign In Screen -->
+        
+        <activity 
+            android:name="SignInScreen"
+            android:label="@string/sign_in"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        </activity>
+        
+        <!-- Loading Screen -->
+        
+        <activity
+            android:name="LoadingScreen"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        </activity>
+        
+        <!-- Registration 1 -->
+       	
+       	<activity
+       	    android:name="Registration1Screen"
+       	    android:label="@string/reg1_title"
+       	    android:screenOrientation="portrait"
+       	    android:launchMode="singleTop"
+       	    android:theme="@android:style/Theme.Holo.Light"
+            android:parentActivityName="HomeScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="HomeScreen"/>
+       	</activity>
+       	
+       	<!-- Registration 2 -->
+       	
+       	<activity
+       	    android:name="Registration2Screen"
+       	    android:label="@string/reg2_title"
+       	    android:screenOrientation="portrait"
+       	    android:theme="@android:style/Theme.Holo.Light"
+       	    android:parentActivityName="Registration1Screen">
+       	    <meta-data
+       	        android:name="android.support.PARENT_ACTIVITY"
+       	        android:value="Registration1Screen" />
+       	</activity>
+       	
+       	<!-- Registration 2b -->
+       	
+       	<activity
+       	    android:name="Registration2bScreen"
+       	    android:label="@string/reg2_title"
+       	    android:screenOrientation="portrait"
+       	    android:theme="@android:style/Theme.Holo.Light"
+       	    android:parentActivityName="Registration1Screen">
+       	    <meta-data
+       	        android:name="android.support.PARENT_ACTIVITY"
+       	        android:value="Registration1Screen" />
+       	</activity>
+       	
+       	<!-- Registration 3 -->
+       	
+       	<activity
+       	    android:name="Registration3Screen"
+       	    android:label="@string/reg3_title"
+       	    android:theme="@android:style/Theme.Holo.Light"
+       	    android:parentActivityName="Registration2Screen">
+       	    <meta-data
+       	        android:name="android.support.PARENT_ACTIVITY"
+       	        android:value="Registration2Screen"/>
+       	</activity>
+       	
+       	<!-- Registration 3b -->
+       	
+       	<activity
+       	    android:name="Registration3bScreen"
+       	    android:label="@string/reg3_title"
+       	    android:theme="@android:style/Theme.Holo.Light"
+       	    android:parentActivityName="Registration2bScreen">
+       	    <meta-data
+       	        android:name="android.support.PARENT_ACTIVITY"
+       	        android:value="Registration2bScreen"/>
+       	</activity>
+       	
+       	<!-- Registration 4 -->
+       	
+       	<activity
+       	    android:name="Registration4Screen"
+       	    android:label="@string/reg3_title"
+       	    android:screenOrientation="portrait"
+       	    android:theme="@android:style/Theme.Holo.Light"
+       	    android:parentActivityName="Registration3Screen">
+       	    <meta-data
+       	        android:name="android.support.PARENT_ACTIVITY"
+       	        android:value="Registration3Screen"/>
+       	</activity>
+       	
+       	<!-- Registration 4b -->
+       	
+       	<activity
+       	    android:name="Registration4bScreen"
+       	    android:label="@string/reg3_title"
+       	    android:screenOrientation="portrait"
+       	    android:theme="@android:style/Theme.Holo.Light"
+       	    android:parentActivityName="Registration3bScreen">
+       	    <meta-data
+       	        android:name="android.support.PARENT_ACTIVITY"
+       	        android:value="Registration3bScreen"/>
+       	</activity>
+       	
+       	<!-- Profile Screen -->
+       	
+       	<activity
+       	    android:name="ProfileScreen"
+       	    android:label=""
+       	    android:screenOrientation="portrait"
+       	    android:theme="@android:style/Theme.Holo.Light" >
+       	</activity>
+       	
+       	<!-- Liked Screen -->
+       	<activity
+       	    android:name="LikedScreen"
+       	    android:label="@string/app_name"
+       	    android:screenOrientation="portrait"
+       	    android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+       	</activity>
+       	
+       	<!-- Need to create activities for chat in here -->
+       	
+    </application>
+
+</manifest>

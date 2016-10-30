@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+    
+    <TextView
+        android:id="@+id/hometext"
+        android:layout_width="140sp"
+        android:layout_height="80sp"
+        android:layout_alignParentRight="true"
+        android:text="@string/home_text"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="80sp"
+        android:background="@color/transparent" />
+            
+	<ImageButton
+	    android:id="@+id/signin"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="260sp"
+	    android:layout_marginLeft="10sp"
+	    android:layout_marginRight="10sp"
+	    android:background="@drawable/sign_in_tw"
+	    android:onClick="signIn" />
+	
+	<ImageButton
+	    android:id="@+id/register"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/signin"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="20sp"
+	    android:layout_marginLeft="10sp"
+	    android:layout_marginRight="10sp"
+	    android:background="@drawable/register_tw"
+	    android:onClick="register" />
+	
+	<Button
+	    android:id="@+id/policybutton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/policybtn"
+	    android:textColor="#FF0000"
+	    android:textSize="12sp"
+	    android:background="@color/clear"
+	    android:layout_marginTop="15sp"
+	    android:layout_below="@id/register"
+	    android:onClick="policyPop" />
+	    
+</RelativeLayout>

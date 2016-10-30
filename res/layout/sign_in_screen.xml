@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context="com.appideaexperts.thirdwheel.SignInScreen" >
+
+    <ImageView
+        android:id="@+id/roundlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/round_icon_tw"
+        android:layout_centerHorizontal="true" />
+    
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roundlogo" 
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="10sp"
+	    android:layout_marginRight="10sp"
+	    android:gravity="center"
+	    android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionNext"
+        android:background="@drawable/username_tw"/>
+    
+    <EditText 
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="5sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="textPassword|textNoSuggestions"
+        android:imeOptions="actionDone"
+        android:background="@drawable/password_tw"/>
+    
+    <ImageButton
+        android:id="@+id/sendSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24sp"
+        android:layout_marginTop="7sp"
+        android:layout_marginLeft="73sp"
+        android:layout_marginRight="73sp"
+        android:background="@drawable/sign_in_switch"/>
+    
+</RelativeLayout>
